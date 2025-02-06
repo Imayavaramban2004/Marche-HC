@@ -58,19 +58,19 @@ const VIDEODATA = {
   },
 };
 
-const HeroText = `"Innovation is at the heart of
+const HeroText = `Innovation is at the heart of
 everything we do. We believe that
 groundbreaking ideas and state-of-the-
 art technology have the power to
 transform healthcare and
-promote health equality."`;
+promote health equality.`;
 
 const SubText = "- Marche";
 
 export default function HomePage() {
   const scrollToProduct = () => {
     scroll.scrollTo("/news", {
-      duration: 800,
+      duration: 100,
       delay: 0,
       smooth: "easeInOutQuart",
     });
@@ -91,7 +91,7 @@ export default function HomePage() {
         <motion.p
           initial="hidden"
           whileInView="reveal"
-          transition={{ staggerChildren: 0.04 }}
+          transition={{ staggerChildren: .01 }}
         >
           {heroText.map((char) => (
             <motion.span
@@ -105,12 +105,12 @@ export default function HomePage() {
           <motion.b
             initial="hidden"
             whileInView="reveal"
-            transition={{ staggerChildren: 1 }}
+            transition={{ staggerChildren: .24 }}
           >
             {subText.map((char) => (
               <motion.span
                 key={Math.random() * 255}
-                transition={{ duration: 0.35 }}
+                transition={{ duration: 3 }}
                 variants={charVariants}
               >
                 {char}
