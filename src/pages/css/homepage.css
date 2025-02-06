@@ -9,7 +9,7 @@
 
 .main-content p {
   color: var(--primary);
-  font-size: 5em;
+  font-size: 4em;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -50,7 +50,7 @@
   align-self: stretch;
   color: #000;
   text-align: center;
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 88px;
   font-style: normal;
   font-weight: 700;
@@ -67,7 +67,7 @@
   align-self: stretch;
   color: var(--Black, #000);
   text-align: center;
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -113,7 +113,7 @@
   color: var(--Colors-Text-white, #fff);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
   font-size: 88px;
   font-style: normal;
   font-weight: 700;
@@ -124,7 +124,7 @@
   color: #fffcfc;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
   font-size: 24px;
   font-style: normal;
   line-height: 150%;
@@ -191,7 +191,7 @@
 
 .home-our-team .card-heading {
   color: #171a1f;
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -215,7 +215,7 @@
 .our-partners .partners-heading {
   width: 552px;
   color: #1e1f1f;
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 88px;
   font-style: normal;
   font-weight: 700;
@@ -314,7 +314,7 @@
   align-self: stretch;
   color: var(--Black, #000);
   text-align: center;
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -325,7 +325,7 @@
   color: var(--Black, #000);
   text-align: center;
 
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -379,7 +379,7 @@
 .blogs-and-events .blog-category {
   align-self: stretch;
   color: var(--Black, #000);
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -387,7 +387,7 @@
 
 .blogs-and-events .blog-title {
   color: var(--Black, #000);
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -396,7 +396,7 @@
 
 .blogs-and-events .blog-text {
   color: var(--Black, #000);
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -405,7 +405,7 @@
 
 .blogs-and-events .read-more {
   color: var(--Black, #000);
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -422,7 +422,7 @@
 
 .blogs-and-events .author-name {
   color: var(--Black, #000);
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -440,7 +440,7 @@
   color: var(--Black, #000);
 
   /* Text/Small/Normal */
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -451,7 +451,7 @@
   color: var(--Black, #000);
 
   /* Text/Medium/Normal */
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -461,7 +461,7 @@
 .blogs-and-events .read-time {
   color: var(--Black, #000);
   /* Text/Small/Normal */
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

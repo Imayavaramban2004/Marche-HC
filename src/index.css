@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  --primary: #560CF5;
+  /* --primary:#97cb3d; */
+  --primary:#0683bc;
+  /* --primary: #560CF5; */
   
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -22,10 +24,13 @@
 
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Poppins", sans-serif;
 
 }
+html{
+  scrollbar-width: none;
 
+}
 a {
   color: #000;
   text-decoration: inherit;
