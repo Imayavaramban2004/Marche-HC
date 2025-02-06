@@ -394,8 +394,9 @@ export default function HomePage() {
                   <NewsCard key={i} {...card} />
                 ))}
               </div>
-            </div></div>
-          
+            </div>
+          </div>
+
           <Link
             to="/news"
             onClick={scrollToProduct}
