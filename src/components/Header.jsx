@@ -23,11 +23,11 @@ const navigateToElement = (path, elementId) => {
 const Header = () => {
   const [navbarVisible, setNavbarVisible] = useState(true);
 
-  const [searchBox ,setSearchBox] = useState(false);
+  const [searchBox, setSearchBox] = useState(false);
 
   return (
     <header className="header">
-      <nav className="nav container ">
+      <nav className="nav">
         <div className="nav__data">
           <a href="/" className="nav__logo">
             <img src={logo} alt="Logo" className="logo" height="auto" />
@@ -105,7 +105,7 @@ const Header = () => {
                     }}
                     className="dropdown__link"
                   >
-                     Mission
+                    Mission
                   </Link>
                 </li>
 
@@ -136,26 +136,30 @@ const Header = () => {
 
             <li className="dropdown__item">
               <div className="nav__link">
-                <NavLink to={"/products"} onClick={scrollToTop}>Our Products</NavLink>
+                <NavLink to={"/products"} onClick={scrollToTop}>
+                  Our Products
+                </NavLink>
               </div>
 
               <ul className="dropdown__menu">
                 <li>
-                  <Link to="/products#marcherobo"  onClick={() => {
+                  <Link
+                    to="/products#marcherobo"
+                    onClick={() => {
                       navigateToElement("/products", "marcherobo");
-                    }} className="dropdown__link">
+                    }}
+                    className="dropdown__link"
+                  >
                     Marche Robo
                   </Link>
                 </li>
 
                 <li>
-                  <a href="#" className="dropdown__link">
-                  </a>
+                  <a href="#" className="dropdown__link"></a>
                 </li>
 
                 <li>
-                  <a href="#" className="dropdown__link">
-                  </a>
+                  <a href="#" className="dropdown__link"></a>
                 </li>
               </ul>
             </li>
@@ -230,8 +234,20 @@ const Header = () => {
           </ul>
           {navbarVisible ? (
             <form className="searchbar ">
-              <input className={searchBox ?"searchbarActive  " :" searchbarDeactive" } type="text" name="search" placeholder="product search" />
-              <button type="button" onClick={()=>{setSearchBox(!searchBox)}}>
+              <input
+                className={
+                  searchBox ? "searchbarActive  " : " searchbarDeactive"
+                }
+                type="text"
+                name="search"
+                placeholder="product search"
+              />
+              <button
+                type="button"
+                onClick={() => {
+                  setSearchBox(!searchBox);
+                }}
+              >
                 <img src="./maginifier.svg" alt="maginifier" />
               </button>
             </form>
