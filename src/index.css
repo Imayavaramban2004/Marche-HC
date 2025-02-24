@@ -5,7 +5,7 @@
   --primary:#560cf5;
   /* --primary: #560CF5; */
 
-  --hover-primary:#babbbc;
+  --hover-primary:#bacada;
 
   --text-primary:white;
   
@@ -26,6 +26,23 @@
 }
 
 
+.backtotop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: opacity 0.3s;
+  z-index: 1;
+  opacity: 0;
+  /* border-radius: 50%; */
+  /* color: white; */
+  /* background-color: black; */
+  &.showuparrow{
+    opacity:1;
+  }
+}
 
 body {
   font-family: "Poppins", sans-serif;

@@ -20,7 +20,7 @@ footer hr {
 }
 
 footer .container {
-  height: 320px;
+  height: 250px;
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -32,9 +32,11 @@ footer .container {
 
 .footer-links {
   display: flex;
+  width: 100%;
   /* align-items: center; */
-  flex-flow: row nowrap;
-  gap: 35%;
+  /* flex-flow: row nowrap; */
+  /* gap: 100px; */
+  justify-content: space-around;
   padding-top: 20px;
   
 }
@@ -42,7 +44,7 @@ footer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 15%;
 }
 /* 

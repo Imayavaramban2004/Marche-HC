@@ -8,6 +8,7 @@ import "./css/aboutpage.css";
 
 import CardUserProfile from "../components/CardUserProfile";
 import UserFullDetails from "../components/UserFullDetails";
+import ScrollingContainer from "../components/ScrollingContainer";
 
 const USERS = {
   boardofdirectors: [
@@ -215,24 +216,14 @@ export default function AboutPage() {
 
    
         <div id="ourmission" className="aboutMission">
-          <div className="abtMission-frame1">
-            <div className="abtContent">
-              <h2 className="abtCont-Hd">Our Mission</h2>
-              <p className="abtCont-para">
-                Marche Healthcare's mission is to unite talented minds and
+        <ScrollingContainer heading="Our Mission" subHeading="Marche Healthcare's mission is to unite talented minds and
                 foster collaboration, leveraging cutting-edge technology to
                 tackle health disparities. By harnessing innovation and
                 expertise, we aim to empower healthcare professionals and to
                 create equitable access to advanced healthcare solutions,
-                ensuring better health outcomes for all
-              </p>
-            </div>
-            <img
-              src={`./about/ourmissionimg.png`}
-              alt="mission image"
-              className="mission-image"
-            />
-          </div>
+                ensuring better health outcomes for all" bgimg="./about/ourmissionimg.png">
+
+        </ScrollingContainer>
           <div className="abtMission-frame2">
             <motion.div
               initial={{ x: -100 }}

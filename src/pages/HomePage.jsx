@@ -70,7 +70,7 @@ const SubText = "- Marche";
 export default function HomePage() {
   const scrollToProduct = () => {
     scroll.scrollTo("/news", {
-      duration: 100,
+      duration: 800,
       delay: 0,
       smooth: "easeInOutQuart",
     });
@@ -105,12 +105,12 @@ export default function HomePage() {
           <motion.b
             initial="hidden"
             whileInView="reveal"
-            transition={{ staggerChildren: .24 }}
+            transition={{ staggerChildren: 0.04 }}
           >
             {subText.map((char) => (
               <motion.span
                 key={Math.random() * 255}
-                transition={{ duration: 3 }}
+                transition={{ duration: 1 }}
                 variants={charVariants}
               >
                 {char}
