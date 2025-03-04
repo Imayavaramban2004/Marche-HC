@@ -18,8 +18,9 @@ const USERS = {
       profileImg: "./profilePic.png",
       name: "Dr. M. Mari Raj",
       position: "Founder & CEO",
-      twitter:"https://x.com/dr_mariraj?t=VuX2qMmZH_aW1omgQP0UQQ&s=08",
-      linkedin: "https://www.linkedin.com/in/dr-mariraj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      twitter: "https://x.com/dr_mariraj?t=VuX2qMmZH_aW1omgQP0UQQ&s=08",
+      linkedin:
+        "https://www.linkedin.com/in/dr-mariraj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       instagram:
         "https://www.instagram.com/dr.mariraj?igsh=MXRraXl6NG54aGs0ZA==",
     },
@@ -54,7 +55,8 @@ const USERS = {
       name: "Dr. M. Mari Raj",
       position: "Founder & CEO",
       twitter: "https://x.com/dr_mariraj?t=VuX2qMmZH_aW1omgQP0UQQ&s=08",
-      linkedin: "https://www.linkedin.com/in/dr-mariraj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin:
+        "https://www.linkedin.com/in/dr-mariraj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       instagram:
         "https://www.instagram.com/dr.mariraj?igsh=MXRraXl6NG54aGs0ZA==",
     },
@@ -109,69 +111,74 @@ export default function AboutPage() {
   return (
     <Layouts title={"About-Page"}>
       <section className="abt-banner"></section>
-        <div id="ourstory" className="aboutCompany">
-          <motion.div
-            initial={{ x: -200 }}
-            animate={{ x: 0 }}
-            transition={{ delay: 0.3 }}
-            className="aboutCompany-content"
-          >
-            <p className="about-subheading">
-              <img src="./about/companyLogo.png" alt="about" />
-            </p>
-            <h3 className="abtcom-heading">Our story</h3>
-            <p className="abtcom-para">
-              Welcome to Marche Health Care, where innovation meets dedication.
-              Founded in 2020, we are a forward-thinking startup committed to
-              revolutionizing the biomedical field. Our primary focus is on the
-              innovation and development of cutting-edge biomedical instruments
-              designed to empower healthcare professionals.
-              <br />
-              <br /> At Marche Health Care, we believe in pushing the boundaries
-              of medical technology to enhance the capabilities of those on the
-              frontlines of healthcare. Our team of experts is dedicated to
-              creating solutions that improve patient outcomes and streamline
-              medical processes. Join us on our journey to transform healthcare
-              through innovation and excellence.
-            </p>
-          </motion.div>
-          <motion.img
-            initial={{ x: 200 }}
-            animate={{ x: 0 }}
-            transition={{ delay: 0.3 }}
-            src="./about/aboutside.png"
-            className="abt-img"
-          />
-        </div>
+      <div id="ourstory" className="aboutCompany">
+        <motion.div
+          initial={{ x: -200 }}
+          animate={{ x: 0 }}
+          transition={{ delay: 0.3 }}
+          className="aboutCompany-content"
+        >
+          <p className="about-subheading">
+            <img src="./about/companyLogo.png" alt="about" />
+          </p>
+          <h3 className="abtcom-heading">Our story</h3>
+          <p className="abtcom-para">
+            Welcome to Marche Health Care, where innovation meets dedication.
+            Founded in 2020, we are a forward-thinking startup committed to
+            revolutionizing the biomedical field. Our primary focus is on the
+            innovation and development of cutting-edge biomedical instruments
+            designed to empower healthcare professionals.
+            <br />
+            <br /> At Marche Health Care, we believe in pushing the boundaries
+            of medical technology to enhance the capabilities of those on the
+            frontlines of healthcare. Our team of experts is dedicated to
+            creating solutions that improve patient outcomes and streamline
+            medical processes. Join us on our journey to transform healthcare
+            through innovation and excellence.
+          </p>
+        </motion.div>
+        <motion.img
+          initial={{ x: 200 }}
+          animate={{ x: 0 }}
+          transition={{ delay: 0.3 }}
+          src="./about/aboutside.png"
+          className="abt-img"
+        />
+      </div>
 
-
-        <div id="ourpurpose" className="purpose-container">
-          <img
-            src={`./about/bgpurpose.png`}
-            alt="Purpose Background"
-            className="purpose-image"
-          />
-          <motion.div
-            initial={{ scale: 0.9 }}
-            whileInView={{ scale: 1.2 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="purpose-overlay"
-          >
-            <h2 className="purpose-heading">Our Purpose</h2>
-            <p className="purpose-text">
-              "Marche Healthcare is dedicated to addressing health disparities
-              by developing innovative medical devices that ensure equal access
-              to high-quality care for all"
-            </p>
-            <div className="author-info">
-              <img src={"./author.png"} alt="Author" className="author-image" />
-              <div className="author-details">
-                <p className="author-name">Dr. Mari Raj</p>
-                <p className="author-position">Founder & CEO</p>
-              </div>
-              <div className="divider"></div>
-              <div className="social-icons">
-             <a href="https://x.com/info_march49738" target="_blank" rel="noopener noreferrer">   <svg
+      <div id="ourpurpose" className="purpose-container">
+        <img
+          src={`./about/bgpurpose.png`}
+          alt="Purpose Background"
+          className="purpose-image"
+        />
+        <motion.div
+          initial={{ scale: 0.9 }}
+          whileInView={{ scale: 1.2 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="purpose-overlay"
+        >
+          <h2 className="purpose-heading">Our Purpose</h2>
+          <p className="purpose-text">
+            "Marche Healthcare is dedicated to addressing health disparities by
+            developing innovative medical devices that ensure equal access to
+            high-quality care for all"
+          </p>
+          <div className="author-info">
+            <img src={"./author.png"} alt="Author" className="author-image" />
+            <div className="author-details">
+              <p className="author-name">Dr. Mari Raj</p>
+              <p className="author-position">Founder & CEO</p>
+            </div>
+            <div className="divider"></div>
+            <div className="social-icons">
+              <a
+                href="https://x.com/info_march49738"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <svg
                   width="28"
                   height="29"
                   viewBox="0 0 28 29"
@@ -186,9 +193,16 @@ export default function AboutPage() {
                     d="M5.96074 7.09766L12.199 15.438L5.92188 22.2194H7.33501L12.8311 16.2825L17.2714 22.2194H22.0795L15.4906 13.4098L21.3336 7.09766H19.9205L14.8594 12.5654L10.7697 7.09766H5.96167H5.96074ZM8.03824 8.13833H10.2466L20.0001 21.1787H17.7918L8.03824 8.13833Z"
                     fill="#131313"
                   />
-                </svg></a>
+                </svg>
+              </a>
 
-          <a href="https://www.linkedin.com/company/marche-healthcare/" target="_blank" rel="noopener noreferrer">      <svg
+              <a
+                href="https://www.linkedin.com/company/marche-healthcare/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   height="29"
@@ -207,20 +221,28 @@ export default function AboutPage() {
                     d="M21.062 12.865C21.7605 13.6232 22.1093 14.6639 22.1093 15.9888V21.8252H19.066V16.4002C19.066 15.732 18.8926 15.2126 18.5466 14.843C18.2007 14.4733 17.7344 14.2876 17.1506 14.2876C16.5667 14.2876 16.1004 14.4724 15.7545 14.843C15.4085 15.2126 15.2351 15.732 15.2351 16.4002V21.8252H12.1738V11.8348H15.2351V13.1597C15.545 12.7181 15.963 12.3693 16.4881 12.1125C17.0131 11.8556 17.6036 11.7277 18.2604 11.7277C19.43 11.7277 20.3644 12.1068 21.062 12.865Z"
                     fill="#3B83CB"
                   />
-                </svg></a>
-              </div>
+                </svg>
+              </a>
             </div>
-          </motion.div>
-        </div>
-  
+          </div>
+        </motion.div>
+      </div>
 
+<<<<<<< HEAD
    
         <div id="ourmission" className="aboutMission">
         <ScrollingContainer heading="Our Mission" subHeading="Marche Healthcare's mission is to unite talented minds and
+=======
+      <div id="ourmission" className="aboutMission">
+        <ScrollingContainer
+          heading="Our Mission"
+          subHeading="Marche Healthcare's mission is to unite talented minds and
+>>>>>>> b52f35b (pages/public/src - update)
                 foster collaboration, leveraging cutting-edge technology to
                 tackle health disparities. By harnessing innovation and
                 expertise, we aim to empower healthcare professionals and to
                 create equitable access to advanced healthcare solutions,
+<<<<<<< HEAD
                 ensuring better health outcomes for all" bgimg="./about/ourmissionimg.png">
 
         </ScrollingContainer>
@@ -239,146 +261,148 @@ export default function AboutPage() {
                 </p>
               </div>
             </motion.div>
+=======
+                ensuring better health outcomes for all"
+          bgimg="./about/ourmissionimg.png"
+        ></ScrollingContainer>
 
-            <motion.div
-              initial={{ x: -100 }}
-              whileInView={{ x: 0 }}
-              transition={{ delay: 0.5, duration: 1 * 0.5 }}
-              className="abtframe-card"
-            >
-              <div className="card-body">
-                <h3>Empower Healthcare Professionals</h3>
-                <p>
-                  Our innovative solutions enhance their capabilities and
-                  streamline workflows
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ x: -100 }}
-              whileInView={{ x: 0 }}
-              transition={{ delay: 0.7, duration: 2 * 0.5 }}
-              className="abtframe-card"
-            >
-              <div className="card-body">
-                <h3>Advancing Health Equality</h3>
-                <p>
-                  Ensure that everyone, regardless of their background, receives
-                  the highest standard of healthcare
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-
-
-  
-        <div id="ourvision" className="aboutVision">
-          <div className="vision-frame">
-            <motion.img
-              initial={{ x: -100 }}
-              whileInView={{ x: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              src={`./about/ourvisionimg.png`}
-              alt="Vision"
-            />
-            <motion.div
-              initial={{ x: 100 }}
-              whileInView={{ x: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="vision-content"
-            >
-              <h2 className="vision-heading">Our Vision</h2>
-              <p className="vision-paragraph">
-                Our vision is a world where health equality is not just an
-                aspiration but a fundamental human right, where every
-                individual, regardless of background or circumstance, has access
-                to equitable healthcare and opportunities for a healthy life."
+        <div className="abtMission-frame2">
+          <motion.div className="abtframe-card">
+            <div className="card-body">
+              <h3>Uniting Talented Minds</h3>
+              <p>
+                Together, we create transformative solutions that promote health
+                equality
               </p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
+>>>>>>> b52f35b (pages/public/src - update)
+
+          <motion.div className="abtframe-card">
+            <div className="card-body">
+              <h3>Empower Healthcare Professionals</h3>
+              <p>
+                Our innovative solutions enhance their capabilities and
+                streamline workflows
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div className="abtframe-card">
+            <div className="card-body">
+              <h3>Advancing Health Equality</h3>
+              <p>
+                Ensure that everyone, regardless of their background, receives
+                the highest standard of healthcare
+              </p>
+            </div>
+          </motion.div>
         </div>
- 
+      </div>
 
-        <div id="ourteam" className="about-team">
-          <div className="team-header">
-            <h2 className="team-heading">Our Team</h2>
-            <p className="team-paragraph">
-              With a shared passion for improving global health outcomes, our
-              team is dedicated to making a meaningful impact in the healthcare
-              industry
+      <div id="ourvision" className="aboutVision">
+        <div className="vision-frame">
+          <motion.img
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            src={`./about/ourvisionimg.png`}
+            alt="Vision"
+          />
+          <motion.div
+            initial={{ x: 100 }}
+            whileInView={{ x: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="vision-content"
+          >
+            <h2 className="vision-heading">Our Vision</h2>
+            <p className="vision-paragraph">
+              Our vision is a world where health equality is not just an
+              aspiration but a fundamental human right, where every individual,
+              regardless of background or circumstance, has access to equitable
+              healthcare and opportunities for a healthy life."
             </p>
+          </motion.div>
+        </div>
+      </div>
+
+      <div id="ourteam" className="about-team">
+        <div className="team-header">
+          <h2 className="team-heading">Our Team</h2>
+          <p className="team-paragraph">
+            With a shared passion for improving global health outcomes, our team
+            is dedicated to making a meaningful impact in the healthcare
+            industry
+          </p>
+        </div>
+
+        <div className="team-container">
+          <div className="team-button">
+            <button
+              className={selectdTab === "boardofdirectors" ? "active" : ""}
+              onClick={() => {
+                handleSelectUserBlog("boardofdirectors");
+              }}
+            >
+              Board of Directors
+            </button>
+            <button
+              className={selectdTab === "scientificadvisors" ? "active" : ""}
+              onClick={() => {
+                handleSelectUserBlog("scientificadvisors");
+              }}
+            >
+              Scientific Advisors
+            </button>
           </div>
-
-          <div className="team-container">
-            <div className="team-button">
-              <button
-                className={selectdTab === "boardofdirectors" ? "active" : ""}
-                onClick={() => {
-                  handleSelectUserBlog("boardofdirectors");
-                }}
-              >
-                Board of Directors
-              </button>
-              <button
-                className={selectdTab === "scientificadvisors" ? "active" : ""}
-                onClick={() => {
-                  handleSelectUserBlog("scientificadvisors");
-                }}
-              >
-                Scientific Advisors
-              </button>
-            </div>
-            <div className="team-cards-container">
-              {selctedCardList ? (
-                selctedCardList.map((userdetails, idx) => {
-                  return (
-                    <CardUserProfile
-                      isActive={userdetails.isActive ? true : ""}
-                      key={idx}
-                      profileimg={userdetails.profileImg}
-                      profilename={userdetails.name}
-                      profiledesigination={userdetails.position}
-                      twitter={userdetails.twitter}
-                      linkedin={userdetails.linkedin}
-                      instagram={userdetails.instagram}
-                      onSelected={() => {
-                        setSelctedCardList((prevList) => {
-                          return [
-                            {
-                              ...prevList[0],
-                              ...selctedCardList.filter(
-                                (value) => value.id === userdetails.id
-                              )[0],
-                              isActive: "true",
-                            },
-                          ];
-                        });
-                      }}
-                    />
-                  );
-                })
-              ) : (
-                <></>
-              )}
-            </div>
-
-            {selctedCardList[0].isActive ? (
-              <UserFullDetails
-                setCardList={setSelctedCardList}
-                selectedCardState={selctedCardList}
-                footerCard={USERS[selectdTab].filter((obj) => {
-                  const removeValue = selctedCardList[0].id;
-                  return obj["id"] !== removeValue;
-                })}
-              />
+          <div className="team-cards-container">
+            {selctedCardList ? (
+              selctedCardList.map((userdetails, idx) => {
+                return (
+                  <CardUserProfile
+                    isActive={userdetails.isActive ? true : ""}
+                    key={idx}
+                    profileimg={userdetails.profileImg}
+                    profilename={userdetails.name}
+                    profiledesigination={userdetails.position}
+                    twitter={userdetails.twitter}
+                    linkedin={userdetails.linkedin}
+                    instagram={userdetails.instagram}
+                    onSelected={() => {
+                      setSelctedCardList((prevList) => {
+                        return [
+                          {
+                            ...prevList[0],
+                            ...selctedCardList.filter(
+                              (value) => value.id === userdetails.id
+                            )[0],
+                            isActive: "true",
+                          },
+                        ];
+                      });
+                    }}
+                  />
+                );
+              })
             ) : (
               <></>
             )}
           </div>
+
+          {selctedCardList[0].isActive ? (
+            <UserFullDetails
+              setCardList={setSelctedCardList}
+              selectedCardState={selctedCardList}
+              footerCard={USERS[selectdTab].filter((obj) => {
+                const removeValue = selctedCardList[0].id;
+                return obj["id"] !== removeValue;
+              })}
+            />
+          ) : (
+            <></>
+          )}
         </div>
-   
+      </div>
     </Layouts>
   );
 }

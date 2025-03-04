@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import "./css/contactpage.css";
 import { Layouts } from "../Layouts/Layouts";
 import ContactCards from "../components/ContactCards";
-import emailImg from "../assets/contact/email.png";
-import internetImg from "../assets/contact/internet.png";
-import locationImg from "../assets/contact/location.png";
+import emailImg from "../assets/contact/mail.png";
+import internetImg from "../assets/contact/circle.png";
+import locationImg from "../assets/contact/pin.png";
 
 const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [purpose, setPurpose] = useState("");
   const [message, setMessage] = useState("");
   const cardDetails = [
     {
@@ -34,7 +35,10 @@ const ContactPage = () => {
       img: locationImg,
       header: "Locate us",
       content: "Find our office and location to reach us",
-      link: "13, Near Auroville, Pondicherry- Tindivanam highways, Thiruchitrambalam , Vanur, Tamilnadu-605111",
+      link: {
+        url: "https://maps.app.goo.gl/sS6HjUAPMz4iFf5t5",
+        text: "13, Near Auroville, Pondicherry-Tindivanam highways, Thiruchitrambalam, Vanur, Tamilnadu-605111"
+      }      
     },
   ];
   return (
@@ -78,9 +82,23 @@ const ContactPage = () => {
                 onChange={(event) => setEmail(event.target.value)}
               />
             </div>
-
             <div>
-              <label htmlFor="message">Message</label>
+              <label htmlFor="purpose">Purpose</label>
+              <select
+                id="purpose"
+                value={purpose}
+                onChange={(event) => setPurpose(event.target.value)}
+              >
+                <option value="" disabled>Select a purpose</option>
+                <option value="Request-demo">Request a Demo</option>
+                <option value="Notice">Notice</option>
+                <option value="Find-distributor">Find a Distributor</option>
+                <option value="IFU-download">IFU Download</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="message">Detailed message about selected purpose: {purpose}</label>
               <textarea
                 type="text"
                 id="message"
@@ -94,7 +112,7 @@ const ContactPage = () => {
             <button type="button">Submit</button>
           </form>
           <motion.div initial={{x:100,opacity:0}} whileInView={{opacity:1,x:0}} transition={{delay:0.5,duration:0.5}}  className="group-images">
-            <img src="./contact/contact-group-img.png" alt="contact images" />
+            <img src="./contact/contact-group-img.jpeg" alt="contact images" />
           </motion.div>
         </div>
       </section>

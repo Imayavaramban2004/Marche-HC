@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
+<<<<<<< HEAD
 import { Link, NavLink } from "react-router-dom";
 import "./css/header.css";
 import logo from "../assets/logo.png";
 import circleLogo from "../assets/Marche logo-circle.png";
+=======
+import { Link } from "react-router-dom";
+import "./css/header.css";
+import logo from "../assets/logo.png"; 
+>>>>>>> b52f35b (pages/public/src - update)
 
 const Nav = () => {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -35,7 +41,11 @@ const Nav = () => {
     },
     {
       title: "Media Center",
+<<<<<<< HEAD
       path: "/news",
+=======
+      path: "/media-center",
+>>>>>>> b52f35b (pages/public/src - update)
       subItems: [
         { name: "Social Media", path: "/news#social" },
         { name: "News & Events", path: "/news#news" },
@@ -52,9 +62,13 @@ const Nav = () => {
 
   return (
     <nav
+<<<<<<< HEAD
       className={`navbar ${
         isHovered ? "navbar-expanded" : isScrolled ? "navbar-small" : ""
       }`}
+=======
+      className={`navbar ${isHovered ? "navbar-expanded" : isScrolled ? "navbar-small" : ""}`}
+>>>>>>> b52f35b (pages/public/src - update)
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => {
         setIsHovered(false);
@@ -62,6 +76,7 @@ const Nav = () => {
       }}
     >
       {/* Logo added here */}
+<<<<<<< HEAD
       <div
         className={`logo-container1 ${
           isScrolled && !isHovered ? "hide-logo" : ""
@@ -73,11 +88,17 @@ const Nav = () => {
             alt="Logo"
             className="logo"
           />
+=======
+      <div className={`logo-container1 ${isScrolled && !isHovered ? "hide-logo" : ""}`}>
+        <Link to="/">
+          <img src={logo} alt="Logo" className="logo" />
+>>>>>>> b52f35b (pages/public/src - update)
         </Link>
       </div>
 
       <ul className="nav-list">
         {menuItems.map((item, index) => (
+<<<<<<< HEAD
           <li
             key={index}
             className="nav-item"
@@ -97,6 +118,15 @@ const Nav = () => {
               <div
                 className={`submenu ${activeMenu === index ? "show" : "hide"}`}
               >
+=======
+          <li key={index} className="nav-item" onMouseEnter={() => setActiveMenu(index)}>
+            <Link to={item.path} className="nav-link" onClick={scrollToTop}>
+              {item.title}
+            </Link>
+
+            {item.subItems.length > 0 && (
+              <div className={`submenu ${activeMenu === index ? "show" : "hide"}`}>
+>>>>>>> b52f35b (pages/public/src - update)
                 {item.subItems.map((sub, subIndex) => (
                   <div
                     key={subIndex}

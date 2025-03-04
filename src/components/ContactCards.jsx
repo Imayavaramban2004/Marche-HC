@@ -14,6 +14,10 @@ const ContactCards = ({ img, header, content, link }) => {
             <img width={'30px'} src={item.img} alt={item.lin} />
           </a>
         ))
+      ) : typeof link === "object" ? (
+        <a href={link.url} target="_blank" rel="noopener noreferrer">
+          {link.text}
+        </a>
       ) : (
         <a href={link} target="_blank">{link}</a>
       )}
