@@ -228,40 +228,14 @@ export default function AboutPage() {
         </motion.div>
       </div>
 
-<<<<<<< HEAD
-   
-        <div id="ourmission" className="aboutMission">
-        <ScrollingContainer heading="Our Mission" subHeading="Marche Healthcare's mission is to unite talented minds and
-=======
       <div id="ourmission" className="aboutMission">
         <ScrollingContainer
           heading="Our Mission"
           subHeading="Marche Healthcare's mission is to unite talented minds and
->>>>>>> b52f35b (pages/public/src - update)
                 foster collaboration, leveraging cutting-edge technology to
                 tackle health disparities. By harnessing innovation and
                 expertise, we aim to empower healthcare professionals and to
                 create equitable access to advanced healthcare solutions,
-<<<<<<< HEAD
-                ensuring better health outcomes for all" bgimg="./about/ourmissionimg.png">
-
-        </ScrollingContainer>
-          <div className="abtMission-frame2">
-            <motion.div
-              initial={{ x: -100 }}
-              whileInView={{ x: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="abtframe-card"
-            >
-              <div className="card-body">
-                <h3>Uniting Talented Minds</h3>
-                <p>
-                  Together, we create transformative solutions that promote
-                  health equality
-                </p>
-              </div>
-            </motion.div>
-=======
                 ensuring better health outcomes for all"
           bgimg="./about/ourmissionimg.png"
         ></ScrollingContainer>
@@ -276,7 +250,6 @@ export default function AboutPage() {
               </p>
             </div>
           </motion.div>
->>>>>>> b52f35b (pages/public/src - update)
 
           <motion.div className="abtframe-card">
             <div className="card-body">

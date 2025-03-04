@@ -15,12 +15,8 @@
 }
 .scrollcontainer {
   position: relative;
-<<<<<<< HEAD
-  min-height: 200vh;
-=======
   min-height: 300vh;
   width: 100%;
->>>>>>> b52f35b (pages/public/src - update)
 
   .stickydiv {
     width: 100%;
@@ -36,11 +32,7 @@
     .zoomoutdiv {
       position: relative;
       margin-top: 8%;
-<<<<<<< HEAD
-      animation: scrolldown;
-=======
       animation: scrolldown linear forwards;
->>>>>>> b52f35b (pages/public/src - update)
       transform-origin: center bottom;
       animation-timeline: view();
 
@@ -53,13 +45,7 @@
         width: 100%;
         /* box-shadow: 0 -60px 100px inset white; */
         transition: box-shadow 0.6s;
-<<<<<<< HEAD
-  /* filter: blur(5px); */
-
-
-=======
         /* filter: blur(5px); */
->>>>>>> b52f35b (pages/public/src - update)
       }
     }
   }
@@ -81,54 +67,29 @@
     width: 51%;
 
     .texthovered {
-<<<<<<< HEAD
-      h3{
-        font-size: 64px;
-        line-height: 76px;
-
-      }
-      h4{
-=======
       h3 {
         font-size: 64px;
         line-height: 76px;
       }
       h4 {
->>>>>>> b52f35b (pages/public/src - update)
         font-size: 20px;
       }
       font-weight: 600;
       letter-spacing: -0.03em;
-<<<<<<< HEAD
-      color: rgb(67, 67, 67);
-      margin: -64px 0px 0px;
-      background-image: none;
-      animation: texthovering;
-=======
       /* color: rgb(67, 67, 67); */
       color: var(--text-primary);
       margin: -64px 0px 0px;
       background-image: none;
       animation: texthovering linear forwards;
       animation-timeline: view();
->>>>>>> b52f35b (pages/public/src - update)
       will-change: transform;
     }
   }
 }
-<<<<<<< HEAD
-.fogdiv{
-  box-shadow: 0 -30px 100px inset white;
-  width: 100%;
-  height: 40vh;
-  position: absolute;
-  bottom: -1px;
-=======
 .fogdiv {
   background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1),white,white);
   height: 30vh;
   margin:-30vh auto -100px;
->>>>>>> b52f35b (pages/public/src - update)
   z-index: 99;
   transform: translateZ(0);
 }
@@ -143,16 +104,6 @@
     /* transform: translateY(-50%); */
     filter: none;
   }
-<<<<<<< HEAD
-  50% {
-    transform: translateY(9%);
-  }
-  100% {
-    opacity: 1;
-    scale: 1.5;
-    filter: blur(10px);
-  }
-=======
   65% {
     transform: translateY(9%);
     scale: 1.5;
@@ -162,15 +113,11 @@
     scale: 1.5;
   }
   
->>>>>>> b52f35b (pages/public/src - update)
 }
 @keyframes texthovering {
   0% {
     opacity: 0;
     transform: translateY(15px);
-<<<<<<< HEAD
-    
-=======
   }
   65%{
     opacity: 0;
@@ -179,14 +126,9 @@
   70% {
     opacity: 1;
     transform: translateY(1px);
->>>>>>> b52f35b (pages/public/src - update)
   }
   100% {
     opacity: 1;
     transform: translateY(1px);
-<<<<<<< HEAD
-    
-=======
->>>>>>> b52f35b (pages/public/src - update)
   }
 }
